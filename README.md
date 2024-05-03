@@ -17,11 +17,11 @@ The TON smart contract gas model is unique and quite different from the EVM mode
 <details>
   <summary>
   
-## General Idea :
+## Introduction :
 </summary>
 
 
- ## Introduction
+ 
 
 Gas in TON is both an indicator of efficiency and a guideline and guard line of development processes. It may be times you think about a solution that may result in high gas consumption. This is a symptom of revising your solution and studying more to figure out how this novel system works as a whole.
 You may conduct a solution that has a problem with the principle of who will be in charge of payment. If you plan to have a million users
