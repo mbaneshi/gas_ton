@@ -134,15 +134,22 @@ Let's examine each value more closely:
 - `bits_count`—count of bits used by smart contract
 - `cell_price`—price of single cell
 - `bit_price`—price of the single bit
+In TON we have a data structure known as a Cell, everything is composed of this entity. 
 
-process and billing payment:
+Who is in charge of rent payments:
 
 Every smart contract is responsible for its storage fee.   
 
+Process and billing payment:
 
-when a smart contract receives a message for processing, the first thing is, that TVM looks at some data that by design is available in every contract,
+When a smart contract receives a message for processing, the first thing is, that TVM looks at some data that by design is available in every contract,
 for example, what is the last payment, and how much fee does this smart contract owe?
 according to this information, the amount of rent will be calculated.
+
+Every smart contract may have one of three statuses, uninitialized, active, and frozen. 
+
+
+
 This is one pitfall that may be we trapped into. if our smart contract has no appropriate balance for payment, the message is discarded.   
 
 
