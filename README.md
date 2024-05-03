@@ -79,38 +79,30 @@ We use gas in this text as a pivotal engineering concept, using it, we explore p
 
 ## General Idea
 
-The TON Virtual Machine (TVM) serves as the environment where smart contract gas fees are incurred. To facilitate a clearer understanding of the subject, we have categorized gas-related aspects into three segments. Additionally, we have highlighted key concepts that merit attention:
+The TON Virtual Machine (TVM) serves as the environment where smart contract gas fees are incurred. To facilitate a clearer understanding of the subject, we have categorized gas-related aspects into three segments.
 
 ![Gas Partition Diagram](assets/gas-partition-diagram.png)
 
 - **Gas Storage Fee**
-  This part deals with spaces that smart contract occupied, and is applicable to every smart contract.
-
-  - All data and instructions are encapsulated in a specialized data structure called Cells, represented by a hash.
-  - Both data and instructions can be computed as bit sequences.
-  - The storage formula is contingent on the time delta and the number of bits involved.
-
+  This part deals with spaces that smart contracts occupy in the network and is applicable to every smart contract. We also call it a rent fee. In simple words, No one can put everything they want on the network and system without payment. This fee has an important effect, in preventing system abuse.
+  We measure space as bit, and time as delta to calculate this fee. We have one simple data structure known as a cell.
+  
 - **Gas Computation Fee**
+When we talk about Gas in general, we talk about this part. In fact the complex and most important gas fee is here. And deserve more attention.
+Every calculation, and commputation in our code has a fee. We call them instructions, and we have big column explaining them in TON document website, here. 
 This part deals with business logic, data structure, and algorithms.
-  - Each operation in TVM incurs a specific gas fee.
-  - TVM utilizes an assembly language with extensibility capabilities.
-
+ 
 - **Gas Communication Fee**
-  This part as its name indicates, related to communication and message passing.
-  - Two distinct realms, namely internal and external, govern communication.
-  - Each realm adheres to its own set of rules.
-  - Every smart contract is responsible for the fee associated with sending outbound messages.
-
+  This part as its name indicates, is related to communication and message passing. Messaging concept in TON pillar of scalability. We have no way but sending message to do any operation, and it has a fee.
 
  For every part, we try to address some common interesting aspects: 
 
  - Theory and Idea,
  - What is the formula, What is involved
  - Who is in charge
- - When the fee is deducted, what is the process
- - Pitfalls
- - Space for improvement
- - development consideration
+ - When the fee is deducted or what is the process
+ - Preventing Pitfalls
+ 
 
 
  </details>
