@@ -5,11 +5,11 @@
   ## Preface
   </summary>
 
-**Who is the target audience** :
+**Target audience** :
 
 Experienced FunC developers who already know FunC basics
 
-**What is the purpose:**
+**Purpose :**
 
 The TON smart contract gas model is unique and quite different from the EVM model. Contract developers must design a gas strategy. If they don't do this well, the contract can run out of TON balance for rent and be removed. Messages that the contract sends might not have enough gas and be rejected. So the purpose of this article is to help FunC developers manage gas and develop a strategy for gas usage to prevent pitfall.
 
@@ -20,8 +20,8 @@ The TON smart contract gas model is unique and quite different from the EVM mode
 ## Introduction :
 </summary>
 
-
- 
+TON is almost a new platform, It needs to devote time and energy to understand it. One key concept in Blockchain part that is major difference in contrast to other 
+known blockchain is the role of Gas. 
 
 Gas in TON is both an indicator of efficiency and a guideline and guard line of development processes. It may be times you think about a solution that may result in high gas consumption. This is a symptom of revising your solution and studying more to figure out how this novel system works as a whole.
 You may conduct a solution that has a problem with the principle of who will be in charge of payment. If you plan to have a million users
