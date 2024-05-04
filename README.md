@@ -9,7 +9,7 @@
 
 Experienced FunC developers who already know FunC basics
 
-**Purpose :**
+**Purpose:**
 
 The TON smart contract gas model is unique and quite different from the EVM model. Contract developers must design a gas strategy. If they don't do this well, the contract can run out of TON balance for rent and be removed. Messages that the contract sends might not have enough gas and be rejected. So the purpose of this article is to help FunC developers manage gas and develop a strategy for gas usage to prevent pitfall.
 
