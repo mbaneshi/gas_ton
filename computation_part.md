@@ -123,7 +123,7 @@ Now let's look at TVM initialization more closely:
 #### TVM Instructions
 
 </summary>
-Explore the [list of TVM instructions](https://docs.ton.org/learn/tvm-instructions/tvm-instructions-overview) for a comprehensive understanding.
+Explore the [list of TVM instructions](https://docs.ton.org/learn/tvm-instructions/tvm-overview) for a comprehensive understanding.
 
 ### Result of TVM Execution
 
