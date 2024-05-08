@@ -157,36 +157,6 @@ This overview provides a foundational understanding of TON Smart Contracts' exec
    
    - **External Message Processing**: External messages, which are often used for communication between smart contracts, may not provide gas or value. The `ACCEPT` instruction allows the smart contract to allocate the necessary gas to process these messages effectively.
    
-   In summary, the `ACCEPT` instruction is a critical component in the gas management strategy of smart contracts. It enables the smart contract to allocate additional gas for processing external messages, ensuring the successful execution of transactions that involve such messages. This instruction plays a vital role in maintaining the integrity and functionality of smart contracts on the TON blockchain.
-   
-   
-   - Certainly! Let's categorize and explain each type of message provided:
-   
-   ### Message Categories and Descriptions:
-   
-   1. **Code Snippet:**
-      - **Description:** These messages contain snippets of code written in the TON programming language. The code appears to be related to smart contracts and cryptographic operations on the TON blockchain.
-      - **Purpose:** To illustrate specific instructions and operations in the TON programming language.
-   
-   2. **Keyword List:**
-      - **Description:** These messages list numerous keywords related to dictionary operations, smart contracts, gas management, random number generation, configuration parameters, global variables, and hashing.
-      - **Purpose:** To highlight the diverse set of terms and concepts present in the provided TON code snippet.
-   
-   3. **Question about Dictionary Operations:**
-      - **Description:** The user seeks an overview of dictionary-related operations mentioned in the provided code snippet. The operations include various combinations of DICT and PFXDICT instructions.
-      - **Purpose:** To understand the functionality and variations of dictionary operations in the TON programming language.
-   
-   4. **Explanation of ACCEPT Instruction:**
-      - **Description:** The user requests an explanation of the `ACCEPT` instruction in the context of smart contracts. The explanation covers the purpose, gas limit adjustment, gas credit reset, exception handling, and external message processing.
-      - **Purpose:** To clarify the role and significance of the `ACCEPT` instruction in gas management within smart contracts on the TON blockchain.
-   
-   ### Summary:
-   
-   The provided messages predominantly revolve around understanding and explaining aspects of the TON programming language, particularly related to smart contracts, gas management, and cryptographic operations. The user is seeking detailed insights into specific instructions and their functionalities, showcasing a focus on comprehending the intricacies of TON blockchain development.
-   
-   If you have more specific questions or if there's a particular aspect you'd like to delve deeper into, feel free to ask!
-   
-
 </details>
 
 </details>
