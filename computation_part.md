@@ -13,11 +13,11 @@ All computations take place in a sandbox environment known as a TON virtual mach
 
 The TON Smart Contracts operate on the TON Virtual Machine (TVM), utilizing the stack principle for efficiency and ease of implementation.
 
-This virtual machine is crafted specially for smart contract processing. All data structure used in the environment is made of Cells. We can consider all information presented in TON Blockchain as a database compromised as Cell. So every record in this database has a unique index known as a hash of Cell. Why knowing this fact matters, because we have access to this context in **TVM** _TODO_.
-Another aspect of this place where all processing takes place (TVM) is the stack-oriented characteristics. We can consider This place as a function that received the previous state and received messages as input and, the new state and outgoing message as output.
-It is obvious that This function is not a pure function as it has side effects. It means it is impossible to have two states identical.
+This virtual machine is crafted specially for smart contract processing. All data structure used in the environment is made of Cells. We can consider all information presented in TON Blockchain as a database compromised as Cell. So every record in this database has a unique index known as a hash of Cell. Why knowing this fact matters, because we have access to this context in **TVM** .
+Another aspect of this place where all processing takes place (TVM) is the stack-oriented characteristics. We can consider This place as a function that received the previous state and messages as input and, the new state and outgoing message as output.
+ It means it is impossible to have two states identical.
 knowing this fact is crucial because this characteristic has two important consequences. First, we can consider even one smart contract as one separate Blockchain. Second This aspect by itself prevents double spending.
-It needs more explanation.
+
 
 As all we know hash function that is pillar of the blockchain industry works as follows.
 we can not find two identical series as bits that result in the same hash. So as we all know one of the data presented in each smart contract is the public key of the owner. This public key itself is a hash of random bits that are resilient enough to be considered by others.
