@@ -338,7 +338,7 @@ So as developers, we should take care if our code is meant to process external m
 
 Any smart contract by its nature is responsible for its storage rent.
 Suppose a smart contract that is compiled, has been deployed, and also has a balance for payment but suffers from
-business logic that results in an infinitive loop. In this case, we should have a mechanism to prevent breakdowns. This is a role of the gas_limit configurable parameter. These days gas_limit is 10k gas or In other words 10k \* 10k naton(nano ton) (the second 10k is currently the gas price in nano, also configurable).
+business logic that results in an infinitive loop. In this case, we should have a mechanism to prevent breakdowns. This is a role of the gas_limit configurable parameter. These days gas_limit is 10k gas or In other words 10k \* 10k nano ton(the second 10k is currently the gas price in nano, also configurable).
 So gas_limit as its name indicates is the most upbound instruction fee that smart contract can pay in just one round transaction. In fact, this is a safety guard.
 At the beginning of processing external messages, gas_limit is set to zero, and the balance of the smart contract acts as gas_credit, in case the balance is zero or not equal to the processing transaction fee, the message will be discarded. This is the place we should care about our smart contract balance.
 
@@ -350,7 +350,7 @@ The gas*limit for external messages is initially set to gas_credit (ConfigParam 
 To process the message, a contract should use accept_message to set the gas limit. Failure to do so may result in the message being discarded if gas_credit is reached or computation is finished without calling accept_message.
 After the transaction ends, full computation fees are deducted from the contract balance based on the new gas limit.
 If an error occurs after accept_message, the transaction is written to the blockchain, fees are deducted, but storage is not updated, and actions are not applied. This can lead to repeated acceptance of the same message until the contract balance is depleted.
-So what should we do ? \_TODO*
+
 
 ---
 
