@@ -358,8 +358,7 @@ If an error occurs after accept_message, the transaction is written to the block
 
 By default, the gas limit for internal messages is set to message*balance/gas_price, with the message paying for its processing.
 The contract can use accept_message/set_gas_limit to change the gas limit during execution.
-Manual gas limit settings do not interfere with bouncing behavior. Bounceable messages will bounce if sent in bounceable mode and contain sufficient funds for processing and creating bounce messages.\_TODO*
-why ? What ? How ?
+Manual gas limit settings do not interfere with bouncing behavior. Bounceable messages will bounce if sent in bounceable mode and contain sufficient funds for processing and creating bounce messages.
 
 bounceable and non-bounceable internal messages
 Bounceable and non-bounceable internal messages are concepts in smart contract development that relate to how messages are processed and handled between contracts on a blockchain.
