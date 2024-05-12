@@ -175,11 +175,11 @@ All computations take place in a sandbox environment known as a TON virtual mach
 
 The TON Smart Contracts operate on the TON Virtual Machine (TVM), utilizing the stack principle for efficiency and ease of implementation.
 
-This virtual machine is crafted specially for smart contract processing. All data structure used in the environment is made of Cells. We can consider all information presented in TON Blockchain as a database compromised as Cell. So every record in this database has a unique index known as a hash of Cell. Why knowing this fact matters, because we have access to this context in **TVM** _TODO_.
-Another aspect of this place where all processing takes place (TVM) is the stack-oriented characteristics. We can consider This place as a function that received the previous state and received messages as input and, the new state and outgoing message as output.
-It is obvious that This function is not a pure function as it has side effects. It means it is impossible to have two states identical.
+This virtual machine is crafted specially for smart contract processing. All data structure used in the environment is made of Cells. We can consider all information presented in TON Blockchain as a database compromised as Cell. So every record in this database has a unique index known as a hash of Cell. Why knowing this fact matters, because we have access to this context in **TVM** .
+Another aspect of this place where all processing takes place (TVM) is the stack-oriented characteristics. We can consider This place as a function that received the previous state and messages as input and, the new state and outgoing message as output.
+ It means it is impossible to have two states identical.
 knowing this fact is crucial because this characteristic has two important consequences. First, we can consider even one smart contract as one separate Blockchain. Second This aspect by itself prevents double spending.
-It needs more explanation.
+
 
 As all we know hash function that is pillar of the blockchain industry works as follows.
 we can not find two identical series as bits that result in the same hash. So as we all know one of the data presented in each smart contract is the public key of the owner. This public key itself is a hash of random bits that are resilient enough to be considered by others.
@@ -285,7 +285,7 @@ Now let's look at TVM initialization more closely:
 #### TVM Instructions
 
 </summary>
-Explore the [list of TVM instructions](https://docs.ton.org/learn/tvm-instructions/tvm-instructions-overview) for a comprehensive understanding.
+Explore the [list of TVM instructions](https://docs.ton.org/learn/tvm-instructions/tvm-overview) for a comprehensive understanding.
 
 ### Result of TVM Execution
 
@@ -319,36 +319,6 @@ This overview provides a foundational understanding of TON Smart Contracts' exec
    
    - **External Message Processing**: External messages, which are often used for communication between smart contracts, may not provide gas or value. The `ACCEPT` instruction allows the smart contract to allocate the necessary gas to process these messages effectively.
    
-   In summary, the `ACCEPT` instruction is a critical component in the gas management strategy of smart contracts. It enables the smart contract to allocate additional gas for processing external messages, ensuring the successful execution of transactions that involve such messages. This instruction plays a vital role in maintaining the integrity and functionality of smart contracts on the TON blockchain.
-   
-   
-   - Certainly! Let's categorize and explain each type of message provided:
-   
-   ### Message Categories and Descriptions:
-   
-   1. **Code Snippet:**
-      - **Description:** These messages contain snippets of code written in the TON programming language. The code appears to be related to smart contracts and cryptographic operations on the TON blockchain.
-      - **Purpose:** To illustrate specific instructions and operations in the TON programming language.
-   
-   2. **Keyword List:**
-      - **Description:** These messages list numerous keywords related to dictionary operations, smart contracts, gas management, random number generation, configuration parameters, global variables, and hashing.
-      - **Purpose:** To highlight the diverse set of terms and concepts present in the provided TON code snippet.
-   
-   3. **Question about Dictionary Operations:**
-      - **Description:** The user seeks an overview of dictionary-related operations mentioned in the provided code snippet. The operations include various combinations of DICT and PFXDICT instructions.
-      - **Purpose:** To understand the functionality and variations of dictionary operations in the TON programming language.
-   
-   4. **Explanation of ACCEPT Instruction:**
-      - **Description:** The user requests an explanation of the `ACCEPT` instruction in the context of smart contracts. The explanation covers the purpose, gas limit adjustment, gas credit reset, exception handling, and external message processing.
-      - **Purpose:** To clarify the role and significance of the `ACCEPT` instruction in gas management within smart contracts on the TON blockchain.
-   
-   ### Summary:
-   
-   The provided messages predominantly revolve around understanding and explaining aspects of the TON programming language, particularly related to smart contracts, gas management, and cryptographic operations. The user is seeking detailed insights into specific instructions and their functionalities, showcasing a focus on comprehending the intricacies of TON blockchain development.
-   
-   If you have more specific questions or if there's a particular aspect you'd like to delve deeper into, feel free to ask!
-   
-
 </details>
 
 </details>
@@ -356,7 +326,6 @@ This overview provides a foundational understanding of TON Smart Contracts' exec
 
 <details>
   <summary>
-    
 
 
 ## Communication
