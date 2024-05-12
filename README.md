@@ -413,8 +413,6 @@ Note: Only internal messages can transfer value, and fees are deducted from the 
 Because external messages can not bear value, so we should start with an internal message, a message within Blockchain, from one smart contract to another.
 A smart contract that starts sending a message, is in charge of paying gas, so to accurately calculate the amount of value to attach to a message in a TON Blockchain smart contract, we should Understand Gas Costs:
 
-~~- Gas price in TON is constant, and additional threads are added with increased load.
-Calculate the gas cost for each action in the contract. -~~
 gas costs are fixed, but if the contract involves storage operations with dynamic-sized types, costs may increase logarithmically with storage size.
 
 Dynamic-sized types (arrays, mappings, strings) increase gas costs logarithmically with storage size.
