@@ -407,7 +407,6 @@ A transaction is a result of processing an inbound message. It involves multiple
 5. **Bounce Phase:** Triggered when a transaction is aborted, involving generating an outbound message and sending it back to the original sender.
 
 Various fees are incurred during these phases.
-~~like incentivizing validators, maintaining network operation, and preventing spam.~~
 
 Note: Only internal messages can transfer value, and fees are deducted from the account balance after the credit phase.
 Because external messages can not bear value, so we should start with an internal message, a message within Blockchain, from one smart contract to another.
